@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  gitbook:
+    image: fellah/gitbook
+    container_name: gitbook
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./:/srv/gitbook
+    restart: always
